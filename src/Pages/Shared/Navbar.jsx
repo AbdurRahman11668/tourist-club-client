@@ -1,10 +1,34 @@
-import { useContext } from "react";
+import { useContext, useRef, useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const profilePicRef = useRef(null);
+  const [isDropdownVisible, setDropdownVisible] = useState(false);
+
+  const handleProfilePicClick = () => {
+    setDropdownVisible(!isDropdownVisible);
+  };
+
+  const calculateDropdownPosition = () => {
+    if (profilePicRef.current) {
+      const profilePicRect = profilePicRef.current.getBoundingClientRect();
+      return {
+        top: profilePicRect.bottom,
+        left: profilePicRect.left,
+      };
+    }
+    return { top: 0, left: 0 };
+  };
+
+  const dropdownStyle = {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    ...calculateDropdownPosition(),
+  };
 
   const handleLogOut = () => {
     logOut()
@@ -75,35 +99,9 @@ const Navbar = () => {
     </>
   );
 
-  const LogInOut = (
-    <>
-      {user ? (
-        <>
-          <button
-            onClick={handleLogOut}
-            className="btn btn-ghost hover:text-red-600 hover:font-medium"
-          >
-            LogOut
-          </button>
-        </>
-      ) : (
-        <>
-          <li>
-            <Link
-              className="hover:text-red-600 hover:font-medium"
-              to="/login"
-            >
-              Login
-            </Link>
-          </li>
-        </>
-      )}
-    </>
-  );
-
   return (
     <div className="navbar fixed z-10 bg-opacity-30 max-w-6xl bg-black text-white">
-      <div className="navbar-start">
+      <div className="navbar-start sm:justify-around lg:justify-normal">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
@@ -128,7 +126,7 @@ const Navbar = () => {
             {navOptions}
           </ul>
         </div>
-        <div className="flex items-center ml-10">
+        <div className="flex justify-center ml-20 lg:ml-10">
           <img
             className="w-5 h-8"
             src="https://i.ibb.co/gFdpDGM/logo.png"
@@ -142,8 +140,45 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal items-center">{navOptions}</ul>
       </div>
-      <div className="navbar-end">
-        <button className="btn">{LogInOut}</button>
+
+      <div className="navbar-end justify-center lg:justify-end">
+        {user ? (
+          <>
+            <div className="">
+              <img
+                className="w-10 rounded-full lg:mr-20"
+                ref={profilePicRef}
+                src={user.providerData[0].photoURL}
+                alt="Profile Pic"
+                onClick={handleProfilePicClick}
+              />
+
+              {isDropdownVisible && (
+                <div style={dropdownStyle}>
+                  {/* Your dropdown content goes here */}
+                  <ul className="text-black bg-white mt-2 rounded p-3 border border-red-700 lg:-ml-52">
+                    <li className="text-sm font-semibold text-red-600  mb-2">Dashboard</li>
+                    <li className="text-sm font-semibold text-red-600 ">Offer Announcements</li>
+                    <li>
+                      <button
+                        onClick={handleLogOut}
+                        className="btn btn-ghost hover:text-red-600 hover:font-medium"
+                      >
+                        Sign Out
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              )}
+            </div>
+          </>
+        ) : (
+          <Link to="/login">
+            <button className="btn btn-ghost hover:text-red-600 hover:font-medium">
+              Login
+            </button>
+          </Link>
+        )}
       </div>
     </div>
   );

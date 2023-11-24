@@ -158,6 +158,7 @@ const Register = () => {
               </small>
             </p>
             <SocialLogin></SocialLogin>
+            
           </div>
         </div>
       </div>

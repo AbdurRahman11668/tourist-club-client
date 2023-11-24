@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import useAuth from "../Hooks/useAuth";
 import useAxiosPublic from "../hooks/useAxiosPublic";
 import { FaGoogle } from "react-icons/fa";
+import Swal from "sweetalert2";
 
 const SocialLogin = () => {
     const { googleSignIn } = useAuth();
@@ -22,6 +23,7 @@ const SocialLogin = () => {
                 navigate('/');
             })
         })
+        
     }
 
     return (

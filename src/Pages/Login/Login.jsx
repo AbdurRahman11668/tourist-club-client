@@ -43,6 +43,7 @@ const Login = () => {
       });
       navigate(from, { replace: true });
     });
+    
   };
 
   const handleValidateCaptcha = (e) => {
@@ -60,7 +61,7 @@ const Login = () => {
         <title>Tourist Club | Login</title>
       </Helmet>
       <div className="hero pt-10 bg-base-200 bg-[url('https://i.ibb.co/yVKyf1h/pexels-boys-in-bristol-photography-19100185.jpg')]">
-        <div className="hero-content flex-col md:flex-row-reverse lg:mt-20">
+        <div className="hero-content flex-col md:flex-row-reverse mt-5 lg:mt-20">
           <div className="text-center lg:text-left hidden lg:contents">
             {/* <img src={img} className="ml-20" alt="" /> */}
           </div>
