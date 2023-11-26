@@ -8,7 +8,7 @@ const Banner = () => {
       <Carousel className="">
         <div className="hero lg:place-items-start ">
           <img
-            className="lg:max-h-screen max-w-lg md:max-w-2xl lg:max-w-full mx-auto"
+            className="lg:max-h-screen max-w-screen md:max-w-2xl lg:max-w-full mx-auto"
             src="https://i.ibb.co/NLh7jnm/banner-5.jpg"
           />
           <div className="hero-content grid place-items-start sm:pt-0 lg:pt-52 sm:pl-0 lg:pl-20">
@@ -27,7 +27,7 @@ const Banner = () => {
         </div>
         <div className="hero lg:place-items-start ">
           <img
-            className="lg:max-h-screen max-w-lg md:max-w-2xl lg:max-w-full mx-auto"
+            className="lg:max-h-screen max-w-screen md:max-w-2xl lg:max-w-full mx-auto"
             src="https://i.ibb.co/wp7n0D9/banner-2.jpg"
           />
           <div className="hero-content grid lg:place-items-start text-start sm:pt-0 lg:pt-52 sm:pl-0 lg:pl-20">
@@ -46,7 +46,7 @@ const Banner = () => {
         </div>
         <div className="hero lg:place-items-start ">
           <img
-            className="lg:max-h-screen max-w-lg md:max-w-2xl lg:max-w-full mx-auto"
+            className="lg:max-h-screen max-w-screen md:max-w-2xl lg:max-w-full mx-auto"
             src="https://i.ibb.co/9ZfFYL2/banner-3.jpg"
           />
           <div className="hero-content grid lg:place-items-start text-start sm:pt-0 lg:pt-52 sm:pl-0 lg:pl-20">
@@ -65,7 +65,7 @@ const Banner = () => {
         </div>
         <div className="hero lg:place-items-start ">
           <img
-            className="lg:max-h-screen max-w-lg md:max-w-2xl lg:max-w-full mx-auto"
+            className="lg:max-h-screen max-w-screen md:max-w-2xl lg:max-w-full mx-auto"
             src="https://i.ibb.co/r4J6pRn/banner-4.jpg"
           />
           <div className="hero-content grid place-items-start sm:pt-0 lg:pt-52 sm:pl-0 lg:pl-20">
@@ -84,7 +84,7 @@ const Banner = () => {
         </div>
         <div className="hero lg:place-items-start ">
           <img
-            className="lg:max-h-screen max-w-lg md:max-w-2xl lg:max-w-full mx-auto"
+            className="lg:max-h-screen max-w-screen md:max-w-2xl lg:max-w-full mx-auto"
             src="https://i.ibb.co/SBjt2Mc/banner-1.jpg"
           />
           <div className="hero-content grid place-items-start sm:pt-0 lg:pt-52 sm:pl-0 lg:pl-20">
