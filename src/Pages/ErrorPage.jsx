@@ -7,10 +7,9 @@ const ErrorPage = () => {
     return (
         <div>
       <Navbar></Navbar>
-      <NavLink to="/" className='text-[#df3437]'>GoCar</NavLink> | 
       <div className="text-center w-full mb-10">
         <img
-          className="w-[700px] mx-auto "
+          className="w-[700px] pt-10 mx-auto "
           src="https://i.ibb.co/7j8Lm4j/404.gif"
           alt=""
         />

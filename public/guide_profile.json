@@ -1,0 +1,29 @@
+[
+  {
+    "guide_name": "John Abraham",
+    "profile_picture": "https://i.ibb.co/Z2wvNv2/john.jpg",
+    "email": "johnabraham@gmail.com",
+    "phone": "+1 (555) 123-4567",
+    "education": "Bachelor of Arts in Tourism Management",
+    "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+    "work_experience": "5 years"
+  },
+  {
+    "guide_name": "Johnson",
+    "profile_picture": "https://i.ibb.co/W5HfwXj/Johnson.jpg",
+    "email": "johnson@gmail.com",
+    "phone": "+1 (555) 123-4567",
+    "education": "Bachelor of Arts in Tourism Management",
+    "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+    "work_experience": "6 years"
+  },
+  {
+    "guide_name": "Thompson",
+    "profile_picture": "https://i.ibb.co/TkXMNP9/thompson.jpg",
+    "email": "thompson@example.com",
+    "phone": "+1 (555) 123-4567",
+    "education": "Bachelor of Arts in Tourism Management",
+    "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+    "work_experience": "4 years"
+  }
+]

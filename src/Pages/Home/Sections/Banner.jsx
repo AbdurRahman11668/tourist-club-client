@@ -18,9 +18,9 @@ const Banner = () => {
             <h3 className="sm:text-3xl lg:text-6xl text-white font-bold pt-3">
               <span className="font-light">Explore</span> The World
             </h3>
-            <Link to="allpackages">
+            <Link to="/allpackages">
               <button className="text-lg mt-5 text-white font-medium py-2 px-7 hover:bg-[#50ba87] hover:border-[#50ba87] border-2 border-white">
-                Buy Now
+                Book Now
               </button>
             </Link>
           </div>

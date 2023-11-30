@@ -5,7 +5,7 @@ const GuideHome = () => {
     return (
         <div>
           <h2 className="text-2xl lg:text-3xl font-semibold text-[#EF7120] text-center">
-            <span>My Profile</span>
+            <span>Guide Profile</span>
           </h2>
           <div className="md:text-center mt-10 grid justify-center">
             <img

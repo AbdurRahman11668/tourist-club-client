@@ -4,11 +4,13 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import useAdmin from "../../Hooks/useAdmin";
 import useGuide from "../../Hooks/UseGuide";
+import useWishlist from "../../Hooks/useWishlist";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
   const [isAdmin] = useAdmin();
   const [isGuide] = useGuide();
+  const [wishlist] = useWishlist();
 
   const profilePicRef = useRef(null);
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -84,10 +86,10 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link to="/dashboard/cart">
+        <Link to="/dashboard/wishlist">
           <button className="btn">
             <FaShoppingCart className="mr-2"></FaShoppingCart>
-            {/* <div className="badge badge-secondary">+{cart.length}</div> */}
+            <div className="badge badge-secondary">+{wishlist.length}</div>
           </button>
         </Link>
       </li>
@@ -163,22 +165,22 @@ const Navbar = () => {
                         {user.providerData[0].email}
                       </li>
                     </div>
-                    {user && isAdmin && (
+                    {user && isAdmin && !isGuide && (
                       <li className="text-sm font-semibold text-cyan-950 hover:text-[#50ba87] ">
                         <Link to="/dashboard/adminHome">Dashboard</Link>
                       </li>
                     )}
-                    {user && !isAdmin && (
+                    {user && !isAdmin && !isGuide && (
                       <li className="text-sm font-semibold text-cyan-950 hover:text-[#50ba87] ">
                         <Link to="/dashboard/profile">Dashboard</Link>
                       </li>
                     )}
-                    {user && isGuide && (
+                    {user && !isAdmin && isGuide && (
                       <li className="text-sm font-semibold text-cyan-950 hover:text-[#50ba87] ">
                         <Link to="/dashboard/guideHome">Dashboard</Link>
                       </li>
                     )}
-                    <Link to="announcement">
+                    <Link to="/offer">
                       <li className="text-sm font-semibold text-cyan-950 hover:text-[#50ba87] ">
                         Offer Announcements
                       </li>

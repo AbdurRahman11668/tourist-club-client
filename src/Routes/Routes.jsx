@@ -13,21 +13,54 @@ import GuideRoute from "./GuideRoute";
 import GuideHome from "../Pages/Dashboard/GuideHome";
 import AllUsers from "../Pages/Dashboard/AllUsers";
 import AddPackages from "../Pages/Dashboard/AddPackages";
-import Packages from "../Pages/Packages";
+import PackageDetails from "../Pages/PackageDetails";
+import AssignedTours from "../Pages/Dashboard/AssignedTours";
+import About from "../Pages/About";
+import Contact from "../Pages/Contact";
+import GuideProfilePublic from "../Pages/Dashboard/GuideProfilePublic";
+import AllPackages from "../Pages/Home/AllPackages";
+import Wishlist from "../Pages/Dashboard/Wishlist";
+import Payment from "../Pages/Dashboard/Payment/Payment";
+import PaymentHistory from "../Pages/Dashboard/Payment/PaymentHistory";
+import Bookings from "../Components/Bookings";
+import UpdateStatus from "../Components/UpdateStatus";
+import Community from "../Pages/Community/Community";
+import Blog from "../Pages/Blog/Blog";
+import Offer from "../Pages/Offer";
 
 const router = createBrowserRouter([
   {
     path: "/",
     errorElement: <ErrorPage></ErrorPage>,
     element: <Main></Main>,
+    loader: () => fetch("http://localhost:5000"),
     children: [
       {
         path: "/",
         element: <Home></Home>,
       },
       {
-        path: "packages",
-        element: <Packages></Packages>,
+        path: "/packagedetails/:id",
+        element: (
+          <PrivateRoute>
+            <PackageDetails></PackageDetails>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/packages/${params.id}`),
+      },
+      {
+        path: "allpackages",
+        element: <AllPackages></AllPackages>,
+        loader: () => fetch("http://localhost:5000/packages"),
+      },
+      {
+        path: "/community",
+        element: <Community></Community>
+      },
+      {
+        path: "/blog",
+        element: <Blog></Blog>
       },
       {
         path: "/login",
@@ -36,6 +69,28 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <Register></Register>,
+      },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>,
+      },
+      {
+        path: "/offer",
+        element: <Offer></Offer>,
+      },
+      {
+        path: "/guideprofilepublic/:id",
+        element: (
+          <PrivateRoute>
+            <GuideProfilePublic></GuideProfilePublic>
+          </PrivateRoute>
+        ),
+        loader: ({ params }) =>
+          fetch(`http://localhost:5000/packages/${params.id}`),
       },
     ],
   },
@@ -52,9 +107,25 @@ const router = createBrowserRouter([
         path: "profile",
         element: <UserProfile></UserProfile>,
       },
+      {
+        path: "wishlist",
+        element: <Wishlist></Wishlist>,
+      },
+      {
+        path: "bookings",
+        element: <Bookings></Bookings>,
+      },
+      {
+        path: "payment",
+        element: <Payment></Payment>,
+      },
+      {
+        path: "paymenthistory",
+        element: <PaymentHistory></PaymentHistory>,
+      },
       // admin routes
       {
-        path: "adminHome",
+        path: "adminhome",
         element: (
           <AdminRoute>
             <AdminHome></AdminHome>
@@ -62,8 +133,12 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: 'addpackages',
-        element: <AdminRoute><AddPackages></AddPackages></AdminRoute>
+        path: "addpackages",
+        element: (
+          <AdminRoute>
+            <AddPackages></AddPackages>
+          </AdminRoute>
+        ),
       },
       // Guides routes
       {
@@ -75,8 +150,21 @@ const router = createBrowserRouter([
         ),
       },
       {
+        path: "assignedtours",
+        element: (
+          <GuideRoute>
+            <AssignedTours></AssignedTours>
+          </GuideRoute>
+        ),
+        loader: () => fetch("http://localhost:5000/bookings/"),
+      },
+      {
         path: "users",
-        element: <AdminRoute><AllUsers></AllUsers></AdminRoute>,
+        element: (
+          <AdminRoute>
+            <AllUsers></AllUsers>
+          </AdminRoute>
+        ),
       },
     ],
   },

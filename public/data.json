@@ -4,7 +4,15 @@
     "image_link": "https://i.ibb.co/k84wHXX/Eiffel-Tower.jpg",
     "tour_type": "Cultural Excursion",
     "description": "Experience the romance of Paris with a visit to the iconic Eiffel Tower. Enjoy panoramic views of the city from this architectural masterpiece.",
-    "guideName": "John Abraham",
+    "guide": {
+      "guide_name": "John Abraham",
+      "profile_picture": "https://i.ibb.co/Z2wvNv2/john.jpg",
+      "email": "johnabraham@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "5 years"
+    },
     "price": "50"
   },
   {
@@ -12,7 +20,15 @@
     "image_link": "https://i.ibb.co/mtRqwZZ/Grand-Canyon.jpg",
     "tour_type": "Scenic Tour",
     "description": "Experience the breathtaking beauty of the Grand Canyon from our designated viewpoint. Our scenic tour provides an opportunity to marvel at the stunning geological formations and appreciate the vastness of this natural wonder. Perfect for nature enthusiasts and photographers alike.",
-    "guideName": "Thompson",
+    "guide": {
+      "guide_name": "Thompson",
+      "profile_picture": "https://i.ibb.co/TkXMNP9/thompson.jpg",
+      "email": "thompson@example.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "4 years"
+    },
     "price": "49"
   },
   {
@@ -20,7 +36,15 @@
     "image_link": "https://i.ibb.co/p3GTJNN/Machu-Picchu.jpg",
     "tour_type": "Historical",
     "description": "Explore the ancient Inca citadel of Machu Picchu, nestled in the Andes mountains. This historical marvel is a UNESCO World Heritage site and one of the New Seven Wonders of the World. Immerse yourself in the rich history and breathtaking architecture of the Incas as you wander through the stone structures and terraced landscapes. Our guided tours provide a fascinating journey through this iconic archaeological wonder.",
-    "guideName": "Johnson",
+    "guide": {
+      "guide_name": "Johnson",
+      "profile_picture": "https://i.ibb.co/W5HfwXj/Johnson.jpg",
+      "email": "johnson@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "6 years"
+    },
     "price": "39"
   },
   {
@@ -28,7 +52,15 @@
     "image_link": "https://i.ibb.co/mFs9xQz/TajMahal.jpg",
     "tour_type": "Historical",
     "description": "Explore the timeless beauty of the Taj Mahal, a symbol of eternal love. This historical monument in Agra, India, was built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal. Marvel at its exquisite white marble architecture, intricate carvings, and stunning gardens. Join us on a journey through the rich history and cultural significance of this UNESCO World Heritage Site. A must-visit destination for history enthusiasts and those seeking the allure of romance.",
-    "guideName": "John Abraham",
+    "guide": {
+      "guide_name": "John Abraham",
+      "profile_picture": "https://i.ibb.co/Z2wvNv2/john.jpg",
+      "email": "johnabraham@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "5 years"
+    },
     "price": "30"
   },
   {
@@ -36,7 +68,15 @@
     "image_link": "https://i.ibb.co/pRFtsxK/Sydney-Opera-House.jpg",
     "tour_type": "Architectural Tour",
     "description": "Admire the iconic Sydney Opera House, a masterpiece of modern architecture. Take a guided tour to discover its cultural significance.",
-    "guideName": "Johnson",
+    "guide": {
+      "guide_name": "Johnson",
+      "profile_picture": "https://i.ibb.co/W5HfwXj/Johnson.jpg",
+      "email": "johnson@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "6 years"
+    },
     "price": "40"
   },
   {
@@ -44,7 +84,15 @@
     "image_link": "https://i.ibb.co/10rxWr8/Great-Wallof-China.jpg",
     "tour_type": "Historical Marvel",
     "description": "Walk along the iconic Great Wall of China. Discover the historical significance of this ancient fortification and enjoy panoramic views of the landscape.",
-    "guideName": "Thompson",
+    "guide": {
+      "guide_name": "Thompson",
+      "profile_picture": "https://i.ibb.co/TkXMNP9/thompson.jpg",
+      "email": "thompson@example.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "4 years"
+    },
     "price": "52"
   },
   {
@@ -52,7 +100,15 @@
     "image_link": "https://i.ibb.co/LQj5Nrf/Niagara-Falls.jpg",
     "tour_type": "Natural Wonder",
     "description": "Witness the awe-inspiring beauty of Niagara Falls. Experience the power of the cascading waterfalls and enjoy boat tours for an up-close view.",
-    "guideName": "John Abraham",
+    "guide": {
+      "guide_name": "John Abraham",
+      "profile_picture": "https://i.ibb.co/Z2wvNv2/john.jpg",
+      "email": "johnabraham@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "5 years"
+    },
     "price": "34"
   },
   {
@@ -60,7 +116,15 @@
     "image_link": "https://i.ibb.co/jVMBDfR/Santorini.jpg",
     "tour_type": "Island Exploration",
     "description": "Discover the breathtaking beauty of Santorini, a mesmerizing Greek island in the Aegean Sea. This guided tour offers a unique blend of ancient history, stunning landscapes, and vibrant culture. Wander through charming villages, witness iconic sunsets over the caldera, and explore archaeological wonders. Immerse yourself in the magic of Santorini, where white-washed buildings cling to dramatic cliffs, creating a postcard-perfect setting for an unforgettable travel experience.",
-    "guideName": "Thompson",
+    "guide": {
+      "guide_name": "Thompson",
+      "profile_picture": "https://i.ibb.co/TkXMNP9/thompson.jpg",
+      "email": "thompson@example.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "4 years"
+    },
     "price": "40"
   },
   {
@@ -68,7 +132,15 @@
     "image_link": "https://i.ibb.co/GTtRkB7/Statueof-Liberty.jpg",
     "tour_type": "Guided Tour",
     "description": "Explore the iconic Statue of Liberty with a knowledgeable guide. Learn about its rich history, from its gift from France to its role as a symbol of freedom. Marvel at breathtaking views of New York City from the pedestal. This guided tour provides a deep dive into the significance of Lady Liberty and her place in American history.",
-    "guideName": "Johnson",
+    "guide": {
+      "guide_name": "Johnson",
+      "profile_picture": "https://i.ibb.co/W5HfwXj/Johnson.jpg",
+      "email": "johnson@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "6 years"
+    },
     "price": "64"
   },
   {
@@ -76,7 +148,15 @@
     "image_link": "https://i.ibb.co/yXcRdyz/Petra.jpg",
     "tour_type": "Historical",
     "description": "Explore the breathtaking ancient city of Petra, known for its stunning rock-cut architecture. This historical tour takes you through the iconic Al-Khazneh (The Treasury), the Monastery, and other archaeological wonders. Immerse yourself in the rich history of the Nabataeans and witness the unique blend of culture and architecture. A truly unforgettable journey through time awaits you in Petra.",
-    "guideName": "John Abraham",
+    "guide": {
+      "guide_name": "John Abraham",
+      "profile_picture": "https://i.ibb.co/Z2wvNv2/john.jpg",
+      "email": "johnabraham@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "5 years"
+    },
     "price": "46"
   },
   {
@@ -84,7 +164,15 @@
     "image_link": "https://i.ibb.co/4ZGV93w/Banff-National-Park.jpg",
     "tour_type": "Nature Exploration",
     "description": "Discover the breathtaking beauty of Banff National Park with a guided nature exploration tour at Banff Lake Louise. Immerse yourself in the stunning landscapes, pristine lakes, and majestic mountains. This tour offers a unique blend of adventure and tranquility, providing opportunities for wildlife spotting and capturing the essence of Banff's natural wonders. Uncover the secrets of this UNESCO World Heritage site while enjoying the comfort of guided exploration.",
-    "guideName": "Thompson",
+    "guide": {
+      "guide_name": "Thompson",
+      "profile_picture": "https://i.ibb.co/TkXMNP9/thompson.jpg",
+      "email": "thompson@example.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "4 years"
+    },
     "price": "50"
   },
   {
@@ -92,7 +180,15 @@
     "image_link": "https://i.ibb.co/DCdpY2k/Yellowstone-National-Park.jpg",
     "tour_type": "Natural Wonders",
     "description": "Discover the geothermal wonders of Yellowstone National Park. Witness geysers, hot springs, and diverse wildlife in this pristine natural environment.",
-    "guideName": "Johnson",
+    "guide": {
+      "guide_name": "Johnson",
+      "profile_picture": "https://i.ibb.co/W5HfwXj/Johnson.jpg",
+      "email": "johnson@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "6 years"
+    },
     "price": "30"
   },
   {
@@ -100,7 +196,15 @@
     "image_link": "https://i.ibb.co/DK2hwVs/Dubai-Burj-Khalifa.jpg",
     "tour_type": "Guided Tour",
     "description": "Explore the iconic Burj Khalifa in Dubai with a fascinating guided tour. Marvel at breathtaking views from the observation deck, learn about the architecture, and immerse yourself in the history of this modern marvel. This tour offers an unforgettable experience of Dubai's skyline and the engineering brilliance behind the world's tallest building.",
-    "guideName": "John Abraham",
+    "guide": {
+      "guide_name": "John Abraham",
+      "profile_picture": "https://i.ibb.co/Z2wvNv2/john.jpg",
+      "email": "johnabraham@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "5 years"
+    },
     "price": "35"
   },
   {
@@ -108,7 +212,15 @@
     "image_link": "https://i.ibb.co/VgYNRbv/Vatican-City.jpg",
     "tour_type": "Cultural",
     "description": "Explore the rich cultural and historical heritage of Vatican City, the smallest independent state in the world. Visit iconic landmarks such as St. Peter's Basilica and the Sistine Chapel. Immerse yourself in the beauty of Renaissance art and architecture. This guided tour offers a fascinating journey through the heart of Catholicism and the splendors of Vatican City.",
-    "guideName": "Thompson",
+    "guide": {
+      "guide_name": "Thompson",
+      "profile_picture": "https://i.ibb.co/TkXMNP9/thompson.jpg",
+      "email": "thompson@example.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "4 years"
+    },
     "price": "50"
   },
   {
@@ -116,7 +228,15 @@
     "image_link": "https://i.ibb.co/NgRsDGf/BoraBora.jpg",
     "tour_type": "Tropical Paradise",
     "description": "Escape to the tropical paradise of Bora Bora. Relax on pristine beaches, indulge in water activities, and experience the luxury of overwater bungalows.",
-    "guideName": "Johnson",
+    "guide": {
+      "guide_name": "Johnson",
+      "profile_picture": "https://i.ibb.co/W5HfwXj/Johnson.jpg",
+      "email": "johnson@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "6 years"
+    },
     "price": "40"
   },
   {
@@ -124,7 +244,15 @@
     "image_link": "https://i.ibb.co/4KBNGdN/Acropolisof-Athens.jpg",
     "tour_type": "Historical",
     "description": "Explore the iconic Acropolis of Athens, a UNESCO World Heritage site and symbol of ancient Greece. Immerse yourself in the rich history of the Parthenon, Erechtheion, and Propylaea. This historical tour offers breathtaking views of Athens and a journey through the architectural wonders of classical antiquity.",
-    "guideName": "John Abraham",
+    "guide": {
+      "guide_name": "Johnson",
+      "profile_picture": "https://i.ibb.co/W5HfwXj/Johnson.jpg",
+      "email": "johnson@gmail.com",
+      "phone": "+1 (555) 123-4567",
+      "education": "Bachelor of Arts in Tourism Management",
+      "skills": "Multilingual (English, Spanish, French), Cultural Knowledge, Excellent Communication",
+      "work_experience": "6 years"
+    },
     "price": "38"
   }
 ]

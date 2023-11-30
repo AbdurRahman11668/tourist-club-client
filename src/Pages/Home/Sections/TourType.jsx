@@ -21,31 +21,31 @@ const TourType = () => {
               Tour Type
             </h1>
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 justify-center pt-5 ">
-              <Link to="packages">
+              <Link to="allpackages">
                 <div className="border-4 hover:border-[#50ba87] rounded-full p-5 text-center">
                   <LiaParachuteBoxSolid className="w-12 h-12 text-white hover:text-[#50ba87] ml-3" />
                   <p className="text-sm font-semibold hover:text-[#50ba87]">AIR RIDE</p>
                 </div>
               </Link>
-              <Link to="packages">
+              <Link to="allpackages">
                 <div className="border-4 hover:border-[#50ba87] rounded-full p-5 text-center">
                   <LiaShipSolid className="w-12 h-12 text-white hover:text-[#50ba87] ml-3" />
                   <p className="text-sm font-semibold hover:text-[#50ba87]">CRUISES</p>
                 </div>
               </Link>
-              <Link to="packages">
+              <Link to="allpackages">
                 <div className="border-4 hover:border-[#50ba87] rounded-full p-5 text-center">
                   <GiHiking className="w-12 h-12 text-white hover:text-[#50ba87] ml-3" />
                   <p className="text-sm font-semibold hover:text-[#50ba87]">HIKING</p>
                 </div>
               </Link>
-              <Link to="packages">
+              <Link to="allpackages">
                 <div className="border-4 hover:border-[#50ba87] rounded-full p-5 text-center">
                   <MdOutlineSportsBasketball className="w-12 h-12 text-white hover:text-[#50ba87] ml-3" />
                   <p className="text-sm font-semibold hover:text-[#50ba87]">SPORTS</p>
                 </div>
               </Link>
-              <Link to="packages">
+              <Link to="allpackages">
                 <div className="border-4 hover:border-[#50ba87] rounded-full p-5 text-center">
                   <GiWalkingBoot className="w-12 h-12 text-white hover:text-[#50ba87] ml-3" />
                   <p className="text-sm font-semibold hover:text-[#50ba87]">WALKING</p>

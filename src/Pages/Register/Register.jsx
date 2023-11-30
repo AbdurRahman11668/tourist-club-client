@@ -28,7 +28,8 @@ const Register = () => {
           // create user entry in the database
           const userInfo = {
             name: data.name,
-            email: data.email
+            email: data.email,
+            image: data.photoURL
         }
         axiosPublic.post('/users', userInfo)
             .then(res => {
@@ -84,6 +85,7 @@ const Register = () => {
                 <input
                   type="text"
                   {...register("photoURL", { required: true })}
+                  
                   placeholder="Photo URL"
                   className="input input-bordered"
                 />
