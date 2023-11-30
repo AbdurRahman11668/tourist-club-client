@@ -23,7 +23,6 @@ import Wishlist from "../Pages/Dashboard/Wishlist";
 import Payment from "../Pages/Dashboard/Payment/Payment";
 import PaymentHistory from "../Pages/Dashboard/Payment/PaymentHistory";
 import Bookings from "../Components/Bookings";
-import UpdateStatus from "../Components/UpdateStatus";
 import Community from "../Pages/Community/Community";
 import Blog from "../Pages/Blog/Blog";
 import Offer from "../Pages/Offer";
@@ -33,7 +32,7 @@ const router = createBrowserRouter([
     path: "/",
     errorElement: <ErrorPage></ErrorPage>,
     element: <Main></Main>,
-    loader: () => fetch("http://localhost:5000"),
+    loader: () => fetch("https://tourist-club-server.vercel.app"),
     children: [
       {
         path: "/",
@@ -47,12 +46,12 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/packages/${params.id}`),
+          fetch(`https://tourist-club-server.vercel.app/packages/${params.id}`),
       },
       {
         path: "allpackages",
         element: <AllPackages></AllPackages>,
-        loader: () => fetch("http://localhost:5000/packages"),
+        loader: () => fetch("https://tourist-club-server.vercel.app/packages"),
       },
       {
         path: "/community",
@@ -90,7 +89,7 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/packages/${params.id}`),
+          fetch(`https://tourist-club-server.vercel.app/packages/${params.id}`),
       },
     ],
   },
@@ -156,7 +155,7 @@ const router = createBrowserRouter([
             <AssignedTours></AssignedTours>
           </GuideRoute>
         ),
-        loader: () => fetch("http://localhost:5000/bookings/"),
+        loader: () => fetch("https://tourist-club-server.vercel.app/bookings/"),
       },
       {
         path: "users",

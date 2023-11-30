@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const Guide = ({products}) => {
     const { _id, guide} = products;
+    // const { _id, guide} = guide;
     return (
         <div className="lg:px-20 pt-10 text-center ">
         <Link to={`/guideprofilepublic/${_id}`}>

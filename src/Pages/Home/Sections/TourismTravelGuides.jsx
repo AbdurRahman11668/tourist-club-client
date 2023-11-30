@@ -2,21 +2,18 @@ import { Link } from "react-router-dom";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import usePackage from "../../../Hooks/usePackage";
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import AllPackage from "../AllPackage";
-import useAuth from "../../../Hooks/useAuth";
-import axios from "axios";
-import useGuideData from "../../../Hooks/useGuideData";
+import MeetTourismTravelGuide from "./MeetTourismTravelGuide";
 
 const TourismTravelGuide = () => {
   const [packages] = usePackage();
   const [dataLength, setDataLength] = useState(4);
+  // const [users, refetch] = useGuideData();
 
-  const [users, refetch] = useGuideData();
-  
-  const uniqueData = users.filter(
-    (value) => value.role === 'guide'
-  );
+  // const uniqueData = guide.filter(
+  //   (value) => value.role === 'guide'
+  // );
 
   return (
     <div className="px-10 lg:px-0 mb-10">
@@ -110,17 +107,18 @@ const TourismTravelGuide = () => {
         </TabPanel>
         <TabPanel>
           <div className="grid grid-cols-2 md:grid-cols-3 mt-10 gap-5 justify-center text-center ">
-            {uniqueData.map((item) => (
-              <div key={item.role}>
-                <img
-                  className="w-40 rounded-full mx-auto"
-                  src={item.image}
-                  alt=""
-                />
-                <h2 className="text-[#50ba87] font-semibold text-lg pt-5">
-                  {item.name}
-                </h2>
-              </div>
+            {packages.slice(0, 3).map((item) => (
+              // <div  key={item._id}>
+              //   <img
+              //     className="w-40 rounded-full mx-auto"
+              //     src={item.guide.image}
+              //     alt=""
+              //   />
+              //   <h2 className="text-[#50ba87] font-semibold text-lg pt-5">
+              //     {item.guide.name}
+              //   </h2>
+              // </div>
+              <MeetTourismTravelGuide key={item._id} products={item}></MeetTourismTravelGuide>
             ))}
           </div>
         </TabPanel>

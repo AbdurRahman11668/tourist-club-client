@@ -7,7 +7,6 @@ import useAxiosSecure from "../../Hooks/useAxiosSecure";
 const Wishlist = () => {
   // const [packages] = useWishlist
   const [wishlist, refetch] = useWishlist();
-  const totalPrice = wishlist.reduce((total, item) => total + item.price, 0);
 
   const axiosSecure = useAxiosSecure();
 
