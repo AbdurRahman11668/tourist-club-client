@@ -115,7 +115,7 @@ const Register = () => {
                 <input
                   type="password"
                   {...register("password", {
-                    required: true,
+                    logirequired: true,
                     minLength: 6,
                     maxLength: 20,
                     pattern: /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
